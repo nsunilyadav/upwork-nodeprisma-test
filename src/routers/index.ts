@@ -1,13 +1,8 @@
 import express from "express";
-import {
-  activateAccount,
-  login,
-  resetPassword,
-  signUp,
-} from "./../controllers/auth";
-import { addPreference } from "./../controllers/shop";
-import { userDetailsInfo } from "./../controllers/user";
-import { verifyToken } from "./../middleware/auth";
+import {activateAccount, login, resetPassword, signUp} from "./../controllers/auth";
+import {addPreference} from "./../controllers/shop";
+import {userDetailsInfo} from "./../controllers/user";
+import {verifyToken} from "./../middleware/auth";
 const router = express.Router();
 
 router.post("/login", login);
